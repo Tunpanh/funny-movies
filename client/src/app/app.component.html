@@ -8,7 +8,7 @@
     </div>
     <div class="navbar-nav ml-auto" *ngIf="currentUser">
         <a class="nav-link">Welcome {{currentUser.username}}!</a>
-        <button class="btn btn-secondary">Share a movie</button>
+        <button class="btn btn-secondary" (click)="openShareMovieForm()">Share a movie</button>
         <button class="btn btn-secondary" (click)="logout()">Logout</button>
     </div>
 </nav>

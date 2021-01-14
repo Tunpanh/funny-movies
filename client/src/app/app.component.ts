@@ -19,6 +19,10 @@ export class AppComponent {
 
     logout() {
         this.authenticationService.logout();
-        this.router.navigate(['/login']);
+        this.router.navigate(['/home']);
+    }
+
+    openShareMovieForm() {
+        this.router.navigate(['/share-movie-form']);
     }
 }

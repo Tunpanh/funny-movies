@@ -8,6 +8,7 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
+import { ShareMovieFormComponent } from './share-movie-form';
 import { AlertComponent } from './_components';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AlertComponent } from './_components';
         AppComponent,
         HomeComponent,
         LoginComponent,
-        AlertComponent
+        AlertComponent,
+        ShareMovieFormComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
