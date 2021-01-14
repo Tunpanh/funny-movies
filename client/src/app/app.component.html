@@ -1,0 +1,31 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+    </div>
+    <div class="navbar-nav ml-auto" *ngIf="!currentUser">
+        <login-component></login-component>
+    </div>
+    <div class="navbar-nav ml-auto" *ngIf="currentUser">
+        <a class="nav-link">Welcome {{currentUser.username}}!</a>
+        <button class="btn btn-secondary">Share a movie</button>
+        <button class="btn btn-secondary" (click)="logout()">Logout</button>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- credits -->
+<div class="text-center">
+
+</div>
