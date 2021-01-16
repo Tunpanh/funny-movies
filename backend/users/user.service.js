@@ -21,7 +21,7 @@ async function authenticate({ username, password }) {
                 token
             };
         } else {
-            return { message: 'Username or password is incorrect' };//{"user": "a", "pass": "b"};//res.status(400).json({ message: 'Username or password is incorrect' })
+            return { message: 'Username or password is incorrect' };
         }
     }
 }
