@@ -1,2 +1,10 @@
 ﻿<h1>Hi {{currentUser.username}}!</h1>
 <p>You're logged in</p>
+
+<h3>All movies:</h3>
+<ul>
+    <li *ngFor="let movie of movies">
+        Shared by: {{movie.sharedBy}}.
+        Movie Url: {{movie.youtubeUrl}} 
+    </li>
+</ul>
