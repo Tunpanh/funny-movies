@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
         private authenticationService: AuthenticationService,
         private shareMovieService: ShareMovieService
     ) {
-        this.currentUser = this.authenticationService.currentUserValue;
+        
     }
 
     ngOnInit() {

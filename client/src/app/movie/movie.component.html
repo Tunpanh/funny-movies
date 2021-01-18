@@ -1,0 +1,16 @@
+﻿<div class="movie-item d-flex flex-row">
+    <div class="movie-image p-2">
+        <img src="{{movie.thumbnailUrl}}" alt="movie thumbnail" width="320" height="220">
+    </div>
+    <div class="movie-info p-2">
+        <div class="movie-title">{{movie.title}}</div>
+        <div class="movie-shared-by">Shared by: {{movie.sharedBy}}</div>
+        <div><span>{{movie.likeCount}} <i class="fa fa-thumbs-o-up fa-lg"></i></span>   
+             <span class="movie-dislike">{{movie.dislikeCount}} <i class="fa fa-thumbs-o-down fa-lg"></i></span>
+        </div>
+        <div>
+            <span class="movie-description-label"> Description: </span><br>
+            <span class="movie-description-content" title="{{movie.description}}"> {{getShortDescription(movie.description)}} </span>
+        </div>
+    </div>
+</div>

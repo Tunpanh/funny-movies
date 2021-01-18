@@ -8,6 +8,7 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
+import { MovieComponent } from './movie';
 import { ShareMovieFormComponent } from './share-movie-form';
 import { AlertComponent } from './_components';
 
@@ -22,6 +23,7 @@ import { AlertComponent } from './_components';
         AppComponent,
         HomeComponent,
         LoginComponent,
+        MovieComponent,
         AlertComponent,
         ShareMovieFormComponent
     ],

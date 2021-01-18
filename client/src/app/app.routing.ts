@@ -6,12 +6,12 @@ import { ShareMovieFormComponent } from './share-movie-form';
 import { AuthGuard } from './_helpers';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
+    { path: 'home', component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'share-movie-form', component: ShareMovieFormComponent },
 
     // otherwise redirect to home
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 export const appRoutingModule = RouterModule.forRoot(routes);

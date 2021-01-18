@@ -1,5 +1,5 @@
 ﻿{
     "connectionString": "mongodb://localhost/funny-movies-api",
     "secret": "C1788B72-C531-4960-B702-EDA1C987E2A7",
-    "youtubeApiKey": "API Key"
+    "youtubeApiKey": "AIzaSyBBcEJDwjHWpVI_038ZRkL2wvmOQVJo8U0"
 }

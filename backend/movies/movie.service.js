@@ -16,7 +16,7 @@ async function getAll() {
 async function create(userParam) {
     let movie = new Movie(userParam);
     const info = await getMovieInfo(movie.youtubeId);
-    movie.thumbnailUrl = info.items[0].snippet.thumbnails.high.url;
+    movie.thumbnailUrl = info.items[0].snippet.thumbnails.medium.url;
     movie.title = info.items[0].snippet.title;
     movie.description = info.items[0].snippet.description;
     movie.likeCount = info.items[0].statistics.likeCount;
