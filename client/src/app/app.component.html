@@ -1,12 +1,14 @@
 ﻿<!-- nav -->
 <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
+    <div class="navbar-nav home-title">
+        <a class="nav-item nav-link" routerLink="/">
+            <span><i class="fa fa-home fa-lg"></i> Funny Movies</span>     
+        </a>
     </div>
-    <div class="navbar-nav ml-auto" *ngIf="!currentUser">
+    <div class="navbar-nav ml-auto user-info" *ngIf="!currentUser">
         <login-component></login-component>
     </div>
-    <div class="navbar-nav ml-auto" *ngIf="currentUser">
+    <div class="navbar-nav ml-auto user-info" *ngIf="currentUser">
         <a class="nav-link">Welcome {{currentUser.username}}!</a>
         <button class="btn btn-secondary" (click)="openShareMovieForm()">Share a movie</button>
         <button class="btn btn-secondary" (click)="logout()">Logout</button>
