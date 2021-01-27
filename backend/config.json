@@ -1,5 +1,5 @@
 ﻿{
-    "connectionString": "mongodb://localhost/funny-movies-api",
+    "connectionString": "mongodb://funny-movies-1712:T4vRLdwZZr3yvRrubfnfiUgesZz2VpeBPgz5UpI5eE9rCdySYaFYL4Xrmaoq8ZsP9xHxqtOrYGDhE4BInNQVEQ==@funny-movies-1712.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@funny-movies-1712@",
     "secret": "C1788B72-C531-4960-B702-EDA1C987E2A7",
     "youtubeApiKey": "AIzaSyBBcEJDwjHWpVI_038ZRkL2wvmOQVJo8U0"
 }
